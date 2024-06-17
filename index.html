@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="./detail_style.css">
+    <link href="./제휴판매.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa7a5faad0.js" crossorigin="anonymous"></script>
+    <script type="module" src="./js/session.js"></script>
+</head>
+
+
+<body>
+    <!-- header -->
+    <header></header>
+    <!-- 컨테이너 전체 감싸기 -->
+    <div id="containerWrap">
+        <!-- 이미지, 제품 컨테이너 감싸기 -->
+        <div id="topContainer">
+            <!-- 이미지 컨테이너 -->
+            <div id="imgContainer">
+                <!-- <img src="" alt="img" id="#productImg" > -->
+            </div>
+            <!-- 제품 컨테이너 -->
+            <div id="productContainer">
+                <div id="productName"></div>
+                <span id="productNameCode"></span>
+                <div id="info"></div>
+                <div class="productPrice">
+                    <table class="productPrice">
+                        <colgroup>
+                            <col style="width:80px;">
+                            <col style="width:280px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">PRICE</th>
+                                <td>
+                                    <span style="font-size:12px;color:#555555;">
+                                        <strong id="strPrice">0</strong>
+                                        <strong class="won">원</strong>
+                                        <span id="intPrice"></span>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <form id="orderform" class="orderform" name="orderform" action="#" method="post" onsubmit="return false;">
+                    <div id="selContainer">
+                        <div id="selectColor">
+                            <select name="selColor" id="selColor" >
+                                <option selected value="">색상 선택</option>
+                                <!-- <option value="블랙">블랙</option>
+                                <option value="핑크">핑크</option>
+                                <option value="화이트">화이트</option> -->
+                            </select>
+                        </div>
+                        <div id="selectSize">
+                            <select disabled name="selSize" id="selSize" >
+                                <option selected value="">사이즈 선택</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="selectList">
+                        <div id="prodtColor">
+                            <p id="pTagCol"></p>
+                        </div>
+                        <div id="prodtSize">
+                            <p id="pTagSiz"></p>
+                        </div>
+                        <!-- <div id="prodtQty">
+                            <p id="pTagQty"></p> 
+
+                        </div> -->
+                        <!-- <div id="prodtPrice">
+
+                        </div> -->
+                    </div>
+                    <div id="totalProducts">
+                        <div class="count">
+                            <i id="minus" class="fas fa-minus up"></i>
+                            <!-- <strong id="num">1</strong> -->
+                            <p><span id="productQty">0</span></p>
+                            <i id="plus" class="fas fa-plus down"></i>
+                        </div>
+                        <div id="totalPrice">
+                            <strong id="sumPrice">0원</strong>
+                            <span id="sumCost"></span>
+                        </div>
+                    </div>
+
+                </form>
+                <div id="productBtn">
+                    <button id="cartBtn">장바구니</button>
+                    <button id="btnBuy">바로구매</button>
+                </div>
+            </div>
+        </div>
+        <div id="ditailContainer">
+            <div id="bdContainer">
+                <p>상세 정보</p>
+            </div>
+            <div id="bottContainer">
+                <!-- 임시이미지 -->
+                <!-- <img src="./detail.jpg" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/detail.js"></script>
+    <script type="module" src="./js/basket.js"></script>
+    
+    <!-- <script type="module" src="./js/session.js"></script> -->
+    
+    <script src="./js/prdtData.json" type="text/javascript"></script>
+</body>
+<!-- footer -->
+<footer id="footer"></footer>
+
+</html>

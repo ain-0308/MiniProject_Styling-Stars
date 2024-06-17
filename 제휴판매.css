@@ -1,0 +1,416 @@
+body {
+  /* margin: 200px;
+    margin-top: 50px;
+    margin-bottom: 0; */
+  /* padding: 0; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  height: 100%;
+  /* margin-top: 30px; */
+  justify-content: center;
+  border-bottom: 1px solid #000;
+  /* background-color: #FFFACD; */
+}
+#head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: #FFFACD;
+  font-size: 20px;
+}
+#head>a>img{
+width: auto;
+height: 350px;
+}
+h3{
+  padding: 10px;
+}
+
+#article {
+  height: 100%;
+  /* background-color: white; */
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 12px;
+
+}
+
+footer {
+  height: 250px;
+  background-color: #FFFFF0;
+  margin: 0;
+}
+
+#image {
+  height: 300px;
+  background-color: #FFFFF0;
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  /* background-color: #FFFACD; */
+}
+
+#header>img {
+  width: 130;
+  height: 38;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  font-family: "Jua", sans-serif;
+  font-size: 20px;
+}
+
+.menu li {
+  margin: 0 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.menu a:hover {
+  border-color: #333;
+  border-radius: 5px;
+}
+
+
+
+
+#image>img {
+  width: 100%;
+}
+
+#article>h1 {
+  margin-top: 16px;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 100px;
+  margin: #FFFACD;
+  background-clip: content-box;
+}
+
+.product-card {
+  display: flex;
+  align-items: end;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin: auto;
+  /* margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px; */
+  border: 3px solid #8B4F1D;
+  border-radius: 12px;
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.product-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 18px;
+  color: black;
+  font-family: "Jua", sans-serif;
+}
+
+.product-price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #8B4F1D;
+  display: flex;
+}
+
+
+#shoppingPrice{
+  width: 50%;
+}
+
+#banner {
+  background-color: #FFFACD;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  margin: 0;
+  /* position: relative; 부모 요소에 상대적인 위치를 설정합니다. */
+  display: flex;
+  justify-content: center;
+}
+
+
+
+#banner>h1 {
+  font-size: 40px;
+  min-width: 11px;
+  white-space: nowrap;
+  margin: 0;
+  /* position: fixed; */
+  color: transparent;
+  /* top:50%; */
+  /* left:50%; */
+  transform: translate(0, 0);
+}
+
+#banner>h1:before {
+  content: "신 규 고 객 환 영 한 다 냥 !";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  color: black;
+  overflow: hidden;
+  /* border-right: 1px solid black; */
+  animation: typing 5s steps(31) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* body {
+    line-height: 1;
+} */
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#article>h3{
+  background-color: #FFFACD;
+  border: 2px solid #8B4F1D;
+  border-radius: 8px;
+}
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------위쪽코드는 reset.css------------ */
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  /*     height:700px; */
+  /* background-color: lightgray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slider>.item {
+  flex-grow: 1;
+  /* border: 1px solid black; */
+  background-color: white;
+  text-align: center;
+}
+
+.item:nth-child(2) {
+  /* max-width: fit-content; */
+  flex-grow: 1;
+  text-align: center;
+  /* background-size: cover;
+      width:800px;
+      height:400px;
+      align-items: center; */
+}
+
+.item:nth-child(3) {
+  /* max-width: fit-content; */
+  flex-grow: 1;
+  text-align: center;
+  /* background-size: cover;
+      width:800px;
+      height:400px;
+      align-items: center; */
+}
+
+
+
+.container ul {
+  -webkit-transition: all 0.75s cubic-bezier(1, .01, 32, 1);
+  -o-transition: all 0.75s cubic-bezier(1, .01, .32, 1);
+  transition: all 0.75s cubic-bezier(1, .01, .32, 1);
+}
+
+
+footer {
+  background-color: white;
+  padding: 20px 0;
+  color: black;
+}
+
+footer .Team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer .Team-about,
+footer .sec.quicklinks,
+footer .sec.Contact {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+footer h3 {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+footer p, footer ul {
+  margin: 0;
+  padding: 0;
+  color: darkgray;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .info li {
+  display: flex;
+  align-items: center;
+}
+
+footer .info li span {
+  margin-right: 10px;
+}
+
+footer .info li a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+footer .info li a:hover {
+  text-decoration: underline;
+}
+
+.CopyrightText {
+  background-color: darkgrey;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.CopyrightText p {
+  margin: 0;
+}
