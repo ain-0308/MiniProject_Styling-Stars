@@ -113,7 +113,7 @@ $(document).ready(function (){
         console.log('qty',qty.innerText);
         
         // 수량이 0이 아닐 경우 페이지 이동
-        if(qty.innerText != 0){
+        if(qty.innerText != '0'){
         
             let productName = document.getElementById('productName');
             productName = productName.innerText;
